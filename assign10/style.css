@@ -1,0 +1,118 @@
+body {
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#parent{
+    width: 600px;
+    height: 500px;
+    background-color: #333;
+    margin: 50px auto;
+    border: 1px solid rgb(232, 223, 235);
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    position: relative;
+}
+.di{
+    background-color: rgb(241, 231, 241);
+}
+#parent .clild1{
+    grid-area: 1 / 1 / 2 / span 4;
+}
+#parent .clild2{
+    grid-area: 1 / 6 / span 7 / span 1;
+}
+#parent .clild3{
+    grid-area: 1 / 1 / span 7 / 2;
+}
+#parent .clild4{
+    grid-area: 4 / 1 / 5 / span 4;
+}
+#parent .clild5{
+    grid-area: 7 / 1 / 8 / span 4;
+}
+#parent .clild6{
+    grid-area: 7 / 6 / 8 / span 4;
+}
+#parent .moving{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    transition:  3s linear;
+}
+#parent .one{
+    bottom: 15px;
+    right: 10px;
+    animation: 8s infinite linear moveOne forwards;
+}
+#parent .two{
+    top: 15px;
+    left: 215px;
+    animation: 8s moveTwo infinite ease-in-out;
+}
+@keyframes moveOne{
+    15%{
+        right: 215px;
+        bottom: 15px; 
+    }
+    25%{
+        bottom: 450px;
+        right: 215px;
+        opacity: 0.5; 
+    }
+    37.5%{
+        bottom: 450px;
+        right: 215px;
+        opacity: 0; 
+    }
+    100%{
+        bottom: 450px;
+        right: 215px;
+        opacity: 0; 
+    }
+}
+@keyframes moveTwo{
+    37.5%{
+        left: 215px;
+        top: 15px;
+    }
+    47%{
+        top: 15px;
+        left: 10px;
+    }
+    54%{
+        left: 10px;
+        top: 235px;
+    }
+    60%{
+        left: 215px;
+        top: 235px;
+    }
+    68%{
+        left: 10px;
+        top: 235px;
+    }
+    76%{
+        left: 10px;
+        top: 450px;
+    }
+    84%{
+        left: 215px;
+        top: 450px;
+    }
+    90%{
+        left: 10px;
+        top: 450px;
+    }
+    95%{
+        top: 15px;
+        left: 10px;
+    }
+    100%{
+        top: 15px;
+        left: 215px;
+    }
+}
