@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(213, 59, 59);
+    animation: load infinite 10s;
+    transition: all 0.5s ease;
+}
+.container{
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes load{
+    0%{
+        background-color: rgb(213, 59, 59);
+    }
+    16%{
+        background-color: rgb(13, 119, 176);
+    }
+    33%{
+        background-color: rgb(60, 193, 11);
+    }
+    50%{
+        background-color: rgb(213, 59, 185);
+    }
+    66%{
+        background-color: rgb(189, 204, 24);
+    }
+    83%{
+        background-color: rgb(55, 13, 192);
+    }
+    100%{
+        background-color: rgb(10, 190, 214);
+    }
+}
