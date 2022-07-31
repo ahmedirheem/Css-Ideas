@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #262662;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color: yellow;
+    padding: 100px 0;
+    transform:skew(0deg, -10deg) translateY(-120px);
+}
+.content{
+    transform:skew(0deg, 10deg);
+    padding: 100px 180px
+}
+.container h1{
+    font-size: 3em;
+    margin: 0;
+    padding: 20px 0;
+}
+.container p{
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 70%;
+    margin: 0;
+}
+.container2{
+    text-align: right;
+    color: #fff;
+    padding: 0 180px 150px;
+}
+.container2 h1{
+    font-size: 3em;
+    margin: 0;
+    padding: 20px 0;
+}
+.container2 p{
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
+    position: absolute;
+    right: 180px;
+    width: 60%;
+}
